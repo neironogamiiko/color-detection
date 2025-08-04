@@ -33,7 +33,7 @@ while True:
         cv.rectangle(frame, (x1,y1), (x2, y2), (0,0,255), 5)
 
     cv.imshow('Frames', frame)
-    if cv2.waitKey(1) & 0xFF == ord('q'):
+    if cv.waitKey(1) & 0xFF == ord('q'):
         break
 
 webcamera.release()
