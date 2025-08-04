@@ -2,7 +2,6 @@ import cv2 as cv
 import numpy as np
 from PIL import Image
 
-
 def get_limits(color):
     tmp_color = np.uint8([[color]]) # the BGR value witch we want to convert to HSV
     hsv_color = cv.cvtColor(tmp_color, cv.COLOR_BGR2HSV)
@@ -15,7 +14,7 @@ def get_limits(color):
 
     return lower_limit, upper_limit
 
-color_to_detect = [0,255,255] # red in BGR colorspace
+color_to_detect = [0,255,255] # yellow in BGR colorspace
 
 webcamera = cv.VideoCapture(0)
 while True:
