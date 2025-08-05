@@ -42,3 +42,7 @@ while True:
 
 webcamera.release()
 cv.destroyAllWindows()
+
+# To-Do List:
+# Зробити вибір кольору
+# Зробити більші межі кольору
